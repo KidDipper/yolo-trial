@@ -44,9 +44,9 @@ import cv2, numpy as np, os
 from collections import defaultdict, deque
 
 # ====== 基本設定 ======
-VIDEO_SOURCE = "input.mp4"     # 動画ファイル or 0（Webカメラ）
+VIDEO_SOURCE = "./sources/squat8n.mp4"     # 動画ファイル or 0（Webカメラ）
 VIDEO_SOURCE = 0     # 動画ファイル or 0（Webカメラ）
-MODEL_PATH   = "yolov8n-pose.pt"
+MODEL_PATH   = "./models/yolov8n-pose.pt"
 
 # ライブ調整可能なパラメータ（起動時の初期値）
 roi_scale   = 0.45   # 肩幅×係数 → ROI一辺のサイズ（0.35〜0.45くらいが目安）

@@ -5,13 +5,13 @@ import csv
 from collections import defaultdict
 
 # YOLOv8 Pose (Nano) - CPUでOK
-model = YOLO("yolov8n-pose.pt")
+model = YOLO("./models/yolov8n-pose.pt")
 
 # 入力動画
-SOURCE = "squat8n.mp4"  # カメラなら 0
+SOURCE = "./sources/squat8n.mp4"  # カメラなら 0
 
 # 出力CSV
-OUT_CSV = "keypoints_tracks.csv"
+OUT_CSV = "./runs/pose/track/keypoints_tracks.csv"
 
 # COCOの17キーポイント名（YOLOv8 pose準拠）
 KP_NAMES = [

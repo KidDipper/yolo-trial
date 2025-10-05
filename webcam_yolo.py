@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import cv2
 
 # 軽量モデル（n=Nano）。CPUでも軽快
-model = YOLO("yolov10n.pt")
+model = YOLO("./models/yolov10n.pt")
 
 # カメラを開く（内蔵/USB。番号は0,1...で切替）
 cap = cv2.VideoCapture(0)  # 必要なら cv2.CAP_DSHOW を指定: cv2.VideoCapture(0, cv2.CAP_DSHOW)
